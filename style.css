@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+#nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+#nav .logo > img {
+  width: 4rem;
+}
+
+#nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav .navbar li {
+  list-style: none;
+  margin-right: 3rem;
+  font-weight: 600;
+}
+
+#nav .navbar li:nth-child(5) {
+  margin-right: 0;
+}
+
+#nav .navbar li:hover {
+  color: var(--soft-red);
+  cursor: pointer;
+}
+
+#nav .mobile {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
+#section1 {
+  width: 100%;
+  padding: 0rem 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+#section1 .hero {
+  width: 65%;
+}
+
+#section1 .hero .hero-img {
+  width: 100%;
+  height: 30%;
+  margin-bottom: 1rem;
+}
+
+#section1 .hero .hero-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#section1 .hero-text {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#section1 .hero-text h1 {
+  width: 50%;
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+#section1 .hero-text .div1 {
+  width: 45%;
+}
+
+#section1 .hero-text .div1 p {
+  line-height: 1.9;
+  font-size: 1.3rem;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1.5rem;
+}
+
+#section1 .hero-text .div1 button {
+  width: 100%;
+  max-width: 10rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 0.7rem 1rem;
+  background-color: var(--soft-red);
+  color: var(--very-dark-blue);
+  outline: none;
+  border: none;
+}
+
+#section1 .hero-text .div1 button:hover {
+  color: var(--off-white);
+  background-color: var(--very-dark-blue);
+}
+
+#section1 .hero-2 {
+  width: 32%;
+  padding: 3.5rem 1.5rem;
+  background-color: var(--very-dark-blue);
+}
+
+#section1 .hero-2 h1 {
+  font-size: 3.2rem;
+  color: var(--soft-orange);
+  margin-bottom: 2rem;
+}
+
+#section1 .hero-2 h2 {
+  color: var(--off-white);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+#section1 .hero-2 h2:hover {
+  color: var(--soft-orange);
+}
+
+#section1 .hero-2 p {
+  font-size: 1.2rem;
+  color: var(--grayish-blue);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+#section1 .hero-2 p:last-child {
+    margin-bottom: 0;
+}
+
+#section1 .hero-2 .hero2-line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--grayish-blue);
+  margin-bottom: 2rem;
+}
+
+#section1 .hero-2 .hero2-line2 {
+  margin-bottom: 0rem;
+}
+
+#section2 {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+#section2 .base-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#section2 .base-container .base {
+  width: 32.2%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#section2 .base-container .baseImage {
+  width: 50%;
+  margin-right: 2rem;
+}
+
+#section2 .base-container .baseImage > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#section2 .base-container .baseText {
+  width: 100%;
+}
+
+#section2 .base-container .baseText h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--soft-red);
+  margin-bottom: 0.9rem;
+}
+
+#section2 .base-container .baseText h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--very-dark-blue);
+  margin-bottom: 0.9rem;
+}
+
+#section2 .base-container .baseText p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--dark-grayish-blue);
+}
+
+@media (max-width: 775px) {
+    #section1 .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    #section1 .hero-text .div1 p {
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+
+    #section1 .hero-text .div1 p {
+        font-size: 0.8rem;
+    }
+
+    #section1 .hero-2 {
+        width: 32%;
+        padding: 1.5rem 0.8rem 1rem 0.8rem;
+        background-color: var(--very-dark-blue);
+    }
+
+    #section1 .hero-2 h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #section1 .hero-2 h2 {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #section1 .hero-2 p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+
+    #section1 .hero-2 .hero2-line {
+        margin-bottom: 1rem;
+    }
+
+    #section2 {
+        margin-bottom: 30rem;
+    }
+
+    #section2 .base-container .baseImage {
+        width: 80%;
+        margin-right: 2rem;
+    }
+
+    #section2 .base-container .baseText h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #section2 .base-container .baseText h2 {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #section2 .base-container .baseText p {
+        font-size: 0.8rem;
+        line-height: 1.2;
+        color: var(--dark-grayish-blue);
+    }
+}
+
+
+@media (max-width: 375px) {
+  #nav .logo > img {
+    width: 3rem;
+  }
+
+  #nav .navbar {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background-color: var(--off-white);
+    padding: 7rem 0 0 1rem;
+    transition: 0.3s;
+  }
+
+  #nav .navbar.active {
+    right: 0px;
+  }
+
+  #nav .navbar li {
+    padding-bottom: 5rem;
+  }
+
+  #nav .mobile {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  #close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    font-size: 2rem;
+    color: var(--very-dark-blue);
+  }
+
+  #section1 {
+    flex-direction: column;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+  }
+
+  #section1 .hero-text {
+    flex-direction: column;
+  }
+  #section1 .hero {
+    width: 100%;
+  }
+
+  #section1 .hero-text h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #section1 .hero-text .div1 {
+    width: 100%;
+  }
+
+  #section1 .hero-text .div1 p {
+    line-height: 2;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #section1 .hero-text .div1 button {
+    padding: 0.7rem 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  #section1 .hero-2 {
+    width: 100%;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    margin-bottom: 0rem;
+  }
+
+  #section1 .hero-2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  #section1 .hero-2 h2 {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  #section1 .hero-2 p {
+    font-size: 0.9rem;
+    margin-bottom: 1.9rem;
+  }
+
+  #section2 {
+    padding: 0 1rem;
+    margin-bottom: 5rem;
+}
+
+  #section2 .base-container {
+    flex-direction: column;
+}
+
+#section2 .base-container .base {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#section2 .base-container .baseText h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#section2 .base-container .baseText h2 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+#section2 .base-container .baseText p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+}
